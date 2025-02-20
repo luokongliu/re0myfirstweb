@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my main page</title>
+    <link rel="stylesheet" href="index_new.css">
+    <script type="text/javascript" src="index_new.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><img id="title" src="/pic/初音.gif"></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">111</a></li>
+                <li><a href="#">222</a></li>
+                <li><a href="#">333</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="left">
+            <div class="block">
+                <button class="blockbtn" id="Interest" onclick="Interest()">I</button>
+            </div>
+            <div class="block">
+                <button class="blockbtn" id="HIG" onclick="HIG()">HIG</button>
+                <button class="blockbtn" id="LIG" onclick="LIG()">LIG</button>
+            </div>
+        </div><!--neirong-->
+        <div>
+            <div class="qianDao right">
+                <header>welcome</header>
+                <p id="clock"></p>
+            </div>
+            <div class="fanQieZhong right">
+                <header id="tomato">番茄钟</header>
+                <button onclick="tomato()">开干</button>
+            </div>
+            <div class="todoist right">
+                <header>todoist</header>
+                <span>内容</span>
+                <br>
+                <input type="text" id="todoInput">
+                <br>
+                <span>序号</span>
+                <br>
+                <input type="number" id="todoIndex" value="0"></input>
+                <br>
+                <button onclick="addTodo()">添加</button>
+                <button onclick="deleteTodo()">删除</button>
+                <ol id="todoList">
+                </ol>
+                <button onclick="getTodo()">获取</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>My Website</p>
+    </footer>
+</body>
+
+</html>
